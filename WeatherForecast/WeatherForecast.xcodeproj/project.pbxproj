@@ -14,6 +14,7 @@
 		F138CF14249950CB00BBD2EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F138CF13249950CB00BBD2EB /* Preview Assets.xcassets */; };
 		F138CF17249950CB00BBD2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F138CF15249950CB00BBD2EB /* LaunchScreen.storyboard */; };
 		F138CF1F2499523900BBD2EB /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138CF1E2499523900BBD2EB /* Weather.swift */; };
+		F138CF21249955EF00BBD2EB /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138CF20249955EF00BBD2EB /* WeatherAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F138CF16249950CB00BBD2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F138CF18249950CB00BBD2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F138CF1E2499523900BBD2EB /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		F138CF20249955EF00BBD2EB /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				F138CF0A249950CA00BBD2EB /* AppDelegate.swift */,
 				F138CF0C249950CA00BBD2EB /* SceneDelegate.swift */,
 				F138CF1E2499523900BBD2EB /* Weather.swift */,
+				F138CF20249955EF00BBD2EB /* WeatherAPI.swift */,
 				F138CF0E249950CA00BBD2EB /* ContentView.swift */,
 				F138CF10249950CB00BBD2EB /* Assets.xcassets */,
 				F138CF15249950CB00BBD2EB /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			files = (
 				F138CF1F2499523900BBD2EB /* Weather.swift in Sources */,
 				F138CF0B249950CA00BBD2EB /* AppDelegate.swift in Sources */,
+				F138CF21249955EF00BBD2EB /* WeatherAPI.swift in Sources */,
 				F138CF0D249950CA00BBD2EB /* SceneDelegate.swift in Sources */,
 				F138CF0F249950CA00BBD2EB /* ContentView.swift in Sources */,
 			);
