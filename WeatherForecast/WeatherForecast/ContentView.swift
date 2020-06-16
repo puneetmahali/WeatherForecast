@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selected = 0
+    @ObservedObject var weather = CurrentWeatherViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack(alignment: .center, spacing: 20) {
+            GeometryReader{ gr in
+                CurrentWeather(weather: self.weather.current, height: self.selected == 0 ? gr.size.height : gr.size.height *)
+            }
+            
+            
+            
+            Text(Weather)
+        }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+    
 }
