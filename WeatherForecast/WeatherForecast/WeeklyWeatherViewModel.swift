@@ -19,8 +19,8 @@ class WeeklyWeatherViewModel: ObservableObject {
 
 extension WeeklyWeatherViewModel {
     func fetch(by city: String = "London") {
-        WeatherAPI.wee(city) {
-            self.current = $0
+        WeatherAPI.weeklyWeather(city) {
+            self.weather = $0
         }
     }
 }

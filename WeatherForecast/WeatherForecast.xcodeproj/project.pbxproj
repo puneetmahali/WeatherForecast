@@ -17,6 +17,11 @@
 		F138CF21249955EF00BBD2EB /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138CF20249955EF00BBD2EB /* WeatherAPI.swift */; };
 		F138CF2324995F2F00BBD2EB /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138CF2224995F2F00BBD2EB /* CurrentWeatherViewModel.swift */; };
 		F138CF252499645200BBD2EB /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138CF242499645200BBD2EB /* CurrentWeather.swift */; };
+		F19CE7F924ACCEED0018F737 /* WeeklyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CE7F824ACCEEC0018F737 /* WeeklyWeather.swift */; };
+		F19CE7FB24ACCEFA0018F737 /* WeeklyWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CE7FA24ACCEFA0018F737 /* WeeklyWeatherViewModel.swift */; };
+		F19CE7FD24AD5B1C0018F737 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CE7FC24AD5B1C0018F737 /* Extension.swift */; };
+		F19CE7FF24AD5B2C0018F737 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CE7FE24AD5B2C0018F737 /* CardView.swift */; };
+		F19CE80124AD5BBE0018F737 /* WeekelyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19CE80024AD5BBE0018F737 /* WeekelyWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		F138CF20249955EF00BBD2EB /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		F138CF2224995F2F00BBD2EB /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
 		F138CF242499645200BBD2EB /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		F19CE7F824ACCEEC0018F737 /* WeeklyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeather.swift; sourceTree = "<group>"; };
+		F19CE7FA24ACCEFA0018F737 /* WeeklyWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherViewModel.swift; sourceTree = "<group>"; };
+		F19CE7FC24AD5B1C0018F737 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F19CE7FE24AD5B2C0018F737 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F19CE80024AD5BBE0018F737 /* WeekelyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekelyWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +76,16 @@
 			children = (
 				F138CF0A249950CA00BBD2EB /* AppDelegate.swift */,
 				F138CF0C249950CA00BBD2EB /* SceneDelegate.swift */,
+				F138CF0E249950CA00BBD2EB /* ContentView.swift */,
 				F138CF1E2499523900BBD2EB /* Weather.swift */,
 				F138CF20249955EF00BBD2EB /* WeatherAPI.swift */,
-				F138CF2224995F2F00BBD2EB /* CurrentWeatherViewModel.swift */,
 				F138CF242499645200BBD2EB /* CurrentWeather.swift */,
-				F138CF0E249950CA00BBD2EB /* ContentView.swift */,
+				F138CF2224995F2F00BBD2EB /* CurrentWeatherViewModel.swift */,
+				F19CE7F824ACCEEC0018F737 /* WeeklyWeather.swift */,
+				F19CE7FA24ACCEFA0018F737 /* WeeklyWeatherViewModel.swift */,
+				F19CE80024AD5BBE0018F737 /* WeekelyWeatherView.swift */,
+				F19CE7FC24AD5B1C0018F737 /* Extension.swift */,
+				F19CE7FE24AD5B2C0018F737 /* CardView.swift */,
 				F138CF10249950CB00BBD2EB /* Assets.xcassets */,
 				F138CF15249950CB00BBD2EB /* LaunchScreen.storyboard */,
 				F138CF18249950CB00BBD2EB /* Info.plist */,
@@ -158,12 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19CE80124AD5BBE0018F737 /* WeekelyWeatherView.swift in Sources */,
 				F138CF1F2499523900BBD2EB /* Weather.swift in Sources */,
 				F138CF0B249950CA00BBD2EB /* AppDelegate.swift in Sources */,
 				F138CF21249955EF00BBD2EB /* WeatherAPI.swift in Sources */,
 				F138CF252499645200BBD2EB /* CurrentWeather.swift in Sources */,
+				F19CE7FB24ACCEFA0018F737 /* WeeklyWeatherViewModel.swift in Sources */,
+				F19CE7FD24AD5B1C0018F737 /* Extension.swift in Sources */,
 				F138CF0D249950CA00BBD2EB /* SceneDelegate.swift in Sources */,
+				F19CE7F924ACCEED0018F737 /* WeeklyWeather.swift in Sources */,
 				F138CF0F249950CA00BBD2EB /* ContentView.swift in Sources */,
+				F19CE7FF24AD5B2C0018F737 /* CardView.swift in Sources */,
 				F138CF2324995F2F00BBD2EB /* CurrentWeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,19 +9,19 @@
 import SwiftUI
 import Combine
 
-final class CurrentWeatherViewModel: ObservedObject {
+final class CurrentWeatherViewModel: ObservableObject {
     @Published var current: Weather?
     
     init() {
-        self.fetch
+        self.fetch()
     }
 }
 
 
 extension CurrentWeatherViewModel {
-    func fetch(_ city: String = "Berlin") {
+    func fetch(_ city: String = "London") {
         WeatherAPI.fetchCurrentWeather(by: city) {
-            self.current $0
+            self.current = $0
         }
     }
 }

@@ -8,27 +8,41 @@
 
 import SwiftUI
 
-
 struct CurrentWeather: View {
     var weather: Weather?
     var height: CGFloat = 0
     
+    var tempConverted: Double {
+        let tempInCelcius = ((weather?.main.temp1 ?? 0) - 32) * 5 / 9
+        return tempInCelcius
+    }
+    
+    var maxTempConverted: Double {
+        let maxTempInCelcius = ((weather?.main.tempMax ?? 0) - 32) * 5 / 9
+        return maxTempInCelcius
+    }
+    
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
-            Text("Today")
+             Text("Today in \(weather?.name ?? "Unknown")")
                 .font(.title)
                 .foregroundColor(.white)
                 .bold()
+            
             HStack{
-                Text("\(weather?.main.temp.rounded() ?? 0)")
-                .foregroundColor(.white)
-                .fontWeight(Font.Weight.heavy)
-                .font(.system(size:65))
+                Text("\(String(format: "%0.0f", tempConverted))ºC")
+                    .foregroundColor(.white)
+                    .fontWeight(Font.Weight.heavy)
+                    .font(.system(size:30))//65
+                Image("\(weather?.weather.last?.icon ?? "01d")")
+                    .resizable()
+                    .frame(width: 130, height: 130)
+                    .aspectRatio(contentMode: .fit)
             }
             Text("\(weather?.weather.last?.description ?? "Unknown")")
                 .foregroundColor(.white)
                 .font(.body)
-            Text("\(weather?.main.tempMax.rounded() ?? 0)")
+            Text("\(String(format: "%0.0f" ,maxTempConverted))ºc")
             .foregroundColor(.white)
             .font(.body)
         }.frame(width: height, height: height)
